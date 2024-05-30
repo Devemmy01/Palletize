@@ -7,18 +7,9 @@
     --gray: #7c7c7c;
     --dark: #1e2f42;
 }
-body::-webkit-scrollbar {
-    width: .3em;
-  }
-   
-  body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-   
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--dark);
-    border-radius: 50px;
-  }
+body::-webkit-scrollbar {width: .3em;}
+body::-webkit-scrollbar-track {box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);}   
+body::-webkit-scrollbar-thumb {background-color: var(--dark); border-radius: 50px;}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -28,57 +19,17 @@ body::-webkit-scrollbar {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 
     'Helvetica Neue', sans-serif;
 }
-body{
-    /* height: 100vh; */
-}
-button, input{
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-    color: inherit;
-}
-button{
-    cursor: pointer;
-}
-body{
-    background: var(--light);
-}
-main{
-    /* padding: 4rem 2rem; */
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 1rem;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    margin-top: -1rem;
-}
-.log{
-    display: flex;
-}
-.logo{
-    font-size: 2rem;
-}
-.logimg{
-    width: 40px;
-    height: 40px;
-    margin-top: 1.6rem;
-}
-.github{
-    display: flex;
-    margin-right: 2%;
-    align-items: flex-end;
-    height: 50px;
-    margin-top: 2rem;
-    justify-content: flex-end;
-}
-.github img{
-    width: 55px;
-}
+button, input{ appearance: none; border: none; outline: none; background: none;}
+button{cursor: pointer;}
+body{background: var(--light);}
+main{max-width: 1200px; margin: 0 auto;}
+nav{display: flex; justify-content: space-between; margin-top: -1rem;}
+/* .log{display: flex;} */
+.logimg{height: 80px; margin-top: 1.6rem;}
+.github{margin-right: 2%; margin-top: 2.5rem;}
+.github img{ width: 55px; }
 h1{
-    margin-top: 1rem;
+    margin-top: 3rem;
     color: var(--dark);
     font-size: 35px;
     line-height: 1.2;
@@ -87,31 +38,16 @@ h1{
     padding: 1rem;
     font-family: 'Josefin Sans', sans-serif;
 }
-p{
-    color: var(--gray);
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
-}
-.copy-hex{
-    font-size: 16px;
-    color: black;
-    font-weight: 700;
-    opacity: 0.5;
-}
+p{color: var(--gray); font-size: 1rem; margin-bottom: 2rem; padding: 1rem;}
+.copy-hex{font-size: 16px; color: black; font-weight: 700; opacity: 0.5;}
 .generator-button{
     color: rgb(6, 41, 105);
     font-size: inherit;
     font-weight: 700;
     background: linear-gradient(to buttom right, var(--primary), var(--secondary));
-    -webkit-background-clip: text;
-    /* -webkit-text-fill-color: transparent; */
-    transition: 0.4s ease-out;
+    transition: 0.4s ease-out;/
 }
-.generator-button:hover{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
+.generator-button:hover{padding-left: 0.5rem; padding-right: 0.5rem;}
 h4{
     color: var(--gray);
     text-transform: uppercase;
@@ -145,16 +81,8 @@ h4{
 .colour:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-/* .colour.copied{
-    border-color: rgba(4, 16, 119, 0.932);
-} */
-.lock-toggle{
-    opacity: 0.5;
-    transition: 0.4s;
-}
-.lock-toggle.is-locked{
-    opacity: 1;
-}
+.lock-toggle{opacity: 0.5; transition: 0.4s;}
+.lock-toggle.is-locked{opacity: 1;}
 .colour-input{
     text-align: center;
     width: 75px;
@@ -163,17 +91,7 @@ h4{
     font-weight: 700;
     opacity: 0.5;
 }
-@media(min-width: 768px){
-    h1{
-        font-size: 4rem;
-    }
-    .colours{
-        margin-bottom: 7%;
-    }
-}
-@media(min-width: 1024px){
-    .colour-input{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-}
+a.twi{
+    display: flex; align-items: center; justify-content: center; color: #1e2f42;
+    text-decoration: none; margin-bottom: 2%; font-weight: 600; font-family: 'Courier New', Courier, monospace; }
+@media(min-width: 768px){ h1{font-size: 4rem;} }

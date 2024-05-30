@@ -17,10 +17,10 @@ class Colour {
         this.locked = locked;
         if (locked) {
             this.element.classList.add('locked');
-            this.element.querySelector('img').src = 'svg/lock.png';
+            this.element.querySelector('img').src = 'Img/lock.png';
         } else {
             this.element.classList.remove('locked');
-            this.element.querySelector('img').src = 'svg/open.png';
+            this.element.querySelector('img').src = 'Img/open.png';
         }
         this.saveState(); // Save the locked state
     }
